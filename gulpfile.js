@@ -74,7 +74,6 @@ gulp.task('css',function(){
 			.pipe(notify({message:'CSS task complete'}))
 });
 
-
 gulp.task('watch',function(){
 	gulp.watch('./www/js/**/*.js',['scripts']);
 	gulp.watch('./www/libs/**/*',['bower']);
