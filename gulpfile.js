@@ -65,13 +65,13 @@ gulp.task('images',function(){
 gulp.task('static',function(){
 	return gulp.src('./www/**/*.html')
 			.pipe(gulp.dest('./public/'))
-			.pipe(notify({message:'Static task complete'}))
+			.pipe(notify({message:'Static task complete'}));
 });
 
 gulp.task('css',function(){
 	return gulp.src('./www/css/*')
 			.pipe(gulp.dest('./public/css/'))
-			.pipe(notify({message:'CSS task complete'}))
+			.pipe(notify({message:'CSS task complete'}));
 });
 
 gulp.task('watch',function(){
