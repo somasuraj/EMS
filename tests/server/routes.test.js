@@ -16,7 +16,7 @@ describe('Routes', function(){
 
 	describe('GETs', function() {
 		it('should handle get /employees', function(){
-			expect(app.use).to.be.calledWith(routes.router);
+			expect(app.get).to.be.calledWith();
 		});
 	});
 
