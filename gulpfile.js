@@ -33,6 +33,7 @@ gulp.task('scripts',function(){
 			.pipe(notify({message:'Scripts task completed'}));
 });
 
+/*
 gulp.task('nodemon', function () {	
 	var started = false;
 	return nodemon({
@@ -47,6 +48,7 @@ gulp.task('nodemon', function () {
 	});
 
 });
+*/
 
 gulp.task('bower',function(){
 	return gulp.src(mainBowerFiles())
@@ -72,6 +74,7 @@ gulp.task('css',function(){
 			.pipe(notify({message:'CSS task complete'}))
 });
 
+
 gulp.task('watch',function(){
 	gulp.watch('./www/js/**/*.js',['scripts']);
 	gulp.watch('./www/libs/**/*',['bower']);
@@ -81,6 +84,7 @@ gulp.task('watch',function(){
 	livereload.listen();
 	gulp.watch(['./public/**']).on('change', livereload.changed);
 });
+
 
 
 gulp.task('clean', function() {
