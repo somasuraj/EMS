@@ -85,7 +85,6 @@ gulp.task('watch',function(){
 });
 
 
-
 gulp.task('clean', function() {
     return del(['public/*','!public/upload/temp','!public/upload/temp/*','!public/upload','!public/upload/*']);
 });
