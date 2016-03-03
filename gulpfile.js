@@ -16,9 +16,9 @@ var gulp = require('gulp'),
 
 gulp.task('default',function(){
 	runSequence('clean',
-		['scripts','images','css','bower','static'],
-		'nodemon',
-		'watch');
+		['scripts','images','css','bower','static']);
+		//'nodemon',
+		//'watch');
 });
 
 gulp.task('scripts',function(){
